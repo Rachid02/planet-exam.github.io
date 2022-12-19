@@ -1,0 +1,142 @@
+*{
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #F6F6F6;
+
+    li{
+        text-decoration: none;
+    }
+
+    h2{
+        padding-bottom: 0.5rem;
+    }
+
+    p{
+        text-align: justify;
+        padding-bottom: 0.5rem;
+    }
+}
+
+header{
+    p:first-of-type{
+        padding-top: 0.5rem;
+    }
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    form{
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 1.5rem;
+            width: 100%;
+
+            label{
+                padding-bottom: 0.5rem;
+                display: flex;
+                justify-content: left;
+            }
+
+            input{
+                width: 100%;
+                padding: 1rem;
+                border-radius: 10px;
+                resize: none;
+            }
+
+            input:invalid {
+                border : 2px dashed red;
+            }
+
+            input:valid {
+                border: 1px solid blue;
+            }
+
+            select{
+                padding: 1rem;
+            }
+
+            textarea{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border-radius: 10px;
+                resize: none;
+            }
+
+            input, textarea{
+                box-sizing: border-box;
+            }
+        }
+
+        button{
+            margin: 0;
+            padding: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    table{
+        border-radius: 5px;
+
+        tbody{
+            tr{
+                td{
+                    padding: 0.5rem;
+                    img{
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            tr{
+                td:nth-of-type(6), td:nth-of-type(7){
+                    text-align: justify;
+                }
+            }          
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px){
+    table{
+        border: none;
+        display: flex;
+        flex-direction: column;
+            
+        thead{
+            // display: none;
+        }
+
+        tr{
+            border: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        th{
+            border: none;
+        }
+        
+        td{
+            border: none;
+        }
+    }
+}

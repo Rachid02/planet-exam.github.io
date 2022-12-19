@@ -1,0 +1,113 @@
+* {
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #F6F6F6;
+}
+* li {
+  text-decoration: none;
+}
+* h2 {
+  padding-bottom: 0.5rem;
+}
+* p {
+  text-align: justify;
+  padding-bottom: 0.5rem;
+}
+
+header p:first-of-type {
+  padding-top: 0.5rem;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+section form {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+section form li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+section form li label {
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: left;
+}
+section form li input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  resize: none;
+}
+section form li input:invalid {
+  border: 2px dashed red;
+}
+section form li input:valid {
+  border: 1px solid blue;
+}
+section form li select {
+  padding: 1rem;
+}
+section form li textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  resize: none;
+}
+section form li input, section form li textarea {
+  box-sizing: border-box;
+}
+section form button {
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+section table {
+  border-radius: 5px;
+}
+section table tbody tr td {
+  padding: 0.5rem;
+}
+section table tbody tr td img {
+  max-width: 200px;
+}
+section table tbody tr td:nth-of-type(6), section table tbody tr td:nth-of-type(7) {
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+  table tr {
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+  table th {
+    border: none;
+  }
+  table td {
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

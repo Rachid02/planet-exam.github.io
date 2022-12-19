@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une nouvelle planète</title>
+    <link rel="stylesheet" href="/webfiles/css/style.css">
+    <script src="/webfiles/js/planetes/create.js" defer></script>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Formulaire d'ajout d'une nouvelle planète.</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+            <form>
+                <ul>
+                    <li>
+                        <label for="nomPlanete">Nom de la planète</label>
+                        <input type="text" id="nomPlanete" name="nomPlanete">
+                    </li>
+                    <li>
+                        <label for="planetType">Type de planète</label>
+                        <select id="planetType" name="planetType">
+                            <option>Tellurique</option>
+                            <option>Gazeuse</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="imagePlanete">Illustration</label>
+                        <input type="text" id="imagePlanete" name="imagePlanete">
+                    </li>
+                    <li>
+                        <label for="planetDiametre">Diamètre</label>
+                        <input type="number" id="planetDiametre" name="planetDiametre">
+                    </li>
+                    <li>
+                        <label for="planetAspect">Aspect</label>
+                        <input type="text" id="planetAspect" name="planetAspect">
+                    </li>
+                    <li>
+                        <label for="planetDesc">Description</label>
+                        <textarea id="planetDesc" name="planetDesc"></textarea>
+                    </li>
+                </ul>
+                <button type="submit">Ajouter la planète</button>
+            </form>
+        </section>    
+    </main>
+</body>
+</html>
